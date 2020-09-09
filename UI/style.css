@@ -181,6 +181,9 @@ body {
   .start-img-text {
     font-size: 75%;
   }
+  .start-img-container {
+      height: 50vh;
+  }
 }
 /*PRODUCT-CARD*/
 .product-container {
@@ -243,6 +246,9 @@ body {
   .product-img {
     height: 50%;
     width: 80%;
+  }
+  .product-information {
+    font-size: 50%;
   }
 }
 /*PRODUCT-CARD-SLUT*/
