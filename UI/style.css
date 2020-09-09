@@ -90,71 +90,98 @@ body {
 
 /*PAGE-CONTAINER*/
 .page-container {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 /*CATEGORY-CONTAINER*/
 
 .category-container {
-    width: 20%;
-    background: #F4F4F4;
-box-shadow: 10px 4px 34px rgba(0, 0, 0, 0.25);
-position: fixed;
-padding-bottom: 2%;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  background: #f4f4f4;
+  box-shadow: 10px 4px 34px rgba(0, 0, 0, 0.25);
+  position: fixed;
 }
 
+/*CATEGORY-MENU*/
 .categories {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #E5E5E5;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .categories i {
-    color: #ffa800;
-    margin: auto 5% auto 5%;
+  color: #ffa800;
+  margin: auto 5% auto 5%;
 }
 
 .categories:last-of-type {
-    border-bottom: none;
+  border-bottom: none;
 }
+
+.categories:hover {
+    color: #ffa800;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .categories {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10%;
+    }
+      }
+@media only screen and (max-width: 768px) {
+.categories p {
+    font-size: 75%;
+}
+  }
+
+/*CATEGORY-MENU-SLUT*/
 
 /*PRODUKTCONTAINER*/
 
 .products-page-container {
-    width: 80%;
-    height: auto;
-    margin-right: 0px;
-    margin-left: auto;
+  width: 80%;
+  height: auto;
+  margin-right: 0px;
+  margin-left: auto;
 }
 
 /*START-IMG*/
 .start-img-container {
-width: 100%;
-height: 90vh;
-background: url('./img/orangeheadphones.JPG');
-background-size: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 90vh;
+  background: url('./img/orangeheadphones.JPG');
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-container {
-    width: 50%;
-    background: rgba(0, 0, 0, 0.25);
-    color: white;
-    text-align: center;
-    padding: 2%;
-    border-radius: 10px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 768px) {
-.start-img-text {
+  .start-img-text {
     font-size: 75%;
-}
   }
+}
 /*PRODUCT-CARD*/
 .product-container {
   width: 90%;
