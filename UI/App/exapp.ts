@@ -1,12 +1,11 @@
-import { DbResult } from './dbResult';
+import { DbResult } from './exdbResult';
 
 const main = async () => {
     try {
-            const api = await import('./api');
+            const api = await import('./exapi');
             const result = await api.getData();
             
-            const html = await import('./html');
-            html.displayTeachers(result.teachers);
+            const html = await import('./exhtml');
             html.displayClasses(result.schoolClasses);
         } 
     catch (e) {

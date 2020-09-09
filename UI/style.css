@@ -88,11 +88,36 @@ body {
 }
 /* navbar slut */
 
+/*START-IMG*/
+.start-img-container {
+width: 100%;
+height: 90vh;
+background: url('./img/orangeheadphones.JPG');
+background-size: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.text-container {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+.start-img-text {
+    font-size: 75%;
+}
+  }
+/*PRODUCT-CARD*/
 .product-container {
-  width: 100%;
+  width: 90%;
   min-height: 50vh;
   padding: 2%;
-  margin: 2%;
+  margin: 2% auto 2% auto;
   box-sizing: border-box;
   border: 1px solid black;
   display: flex;
@@ -150,3 +175,4 @@ body {
     width: 80%;
   }
 }
+/*PRODUCT-CARD-SLUT*/
