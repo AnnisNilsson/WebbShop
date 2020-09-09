@@ -88,6 +88,49 @@ body {
 }
 /* navbar slut */
 
+/*PAGE-CONTAINER*/
+.page-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*CATEGORY-CONTAINER*/
+
+.category-container {
+    width: 20%;
+    background: #F4F4F4;
+box-shadow: 10px 4px 34px rgba(0, 0, 0, 0.25);
+position: fixed;
+padding-bottom: 2%;
+}
+
+.categories {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.categories i {
+    color: #ffa800;
+    margin: auto 5% auto 5%;
+}
+
+.categories:last-of-type {
+    border-bottom: none;
+}
+
+/*PRODUKTCONTAINER*/
+
+.products-page-container {
+    width: 80%;
+    height: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
 /*START-IMG*/
 .start-img-container {
 width: 100%;
