@@ -1,0 +1,45 @@
+{
+  "name": "schoolsite",
+  "version": "1.0.0",
+  "description": "G uppgift JS2",
+  "main": "app.ts",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josiehpersson/schoolsite.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josiehpersson/schoolsite/issues"
+  },
+  "homepage": "https://github.com/josiehpersson/schoolsite#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "common-tags": "^1.8.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mssql": "^6.2.1",
+    "nodemon": "^2.0.4",
+    "tedious": "^9.2.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
