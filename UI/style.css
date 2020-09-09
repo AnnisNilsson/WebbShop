@@ -1,3 +1,5 @@
+
+/*PRODUCT-CARD*/
 .product-container {
     width: 100%;
     min-height: 50vh;
@@ -42,4 +44,18 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+}
+@media only screen and (max-width: 768px) {
+.product-container {
+    flex-flow: column;
+    padding: 2%;
+}
+
+.shop-icon-container {
+    width: 50%;
+}
+.product-img {
+    height: 50%;
+    width: 80%;
+}
 }
