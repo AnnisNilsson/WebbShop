@@ -1,10 +1,10 @@
 const sql = require('mssql');
 const config = require('../config');
 
-addressesController = () => {
+ordersController = () => {
     get = async (req, res) => {
         try{
-            let query = req.params.Id > 0 ? `EXEC GetAddress ${req.params.Id}` : `EXEC GetAddresses`;
+            let query = req.params.Id > 0 ? `EXEC GetOrder ${req.params.Id}` : `EXEC GetOrder`;
             await sql.connect(config);
             const result = await sql.query(query);
             return res.json(result.recordset);
@@ -16,4 +16,4 @@ addressesController = () => {
     return {get}
 };
 
-module.exports = addressesController;
+module.exports = ordersController;
