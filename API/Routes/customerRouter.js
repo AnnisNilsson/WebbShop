@@ -4,9 +4,9 @@ const customersController = require('../controllers/customersController');
 const routes = () => {
 const customerRouter = express.Router();
 const controller = customersController();
-customerRouter.route('/Customers')
+customerRouter.route('/Customer')
  .get(controller.get);
-customerRouter.route('/Customers/:Id')
+customerRouter.route('/Customer/:Id')
  .get(controller.get);
 return customerRouter;
 };

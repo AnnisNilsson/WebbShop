@@ -26,39 +26,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 //specifies that the parser presents data in JSON format
 
-/*
-const teacherRouter = require('./routes/teacherRouter')();
-app.use('/api', teacherRouter);
-const classRouter = require('./routes/classRouter')();
-app.use('/api', classRouter);
-*/
 
-const basicCartRouter = require('./Routes/basicCartRouter')();
-app.use('./api', basicCartRouter);
-const brandRouter = require('./Routes/brandRouter')();
-app.use('./api', brandRouter);
-const cartProductRouter = require('./Routes/cartProductRouter')();
-app.use('./api', cartProductRouter);
-const cartProductsByCustomerIdRouter = require('./Routes/cartProductsByCustomerIdRouter')();
-app.use('./api', cartProductsByCustomerIdRouter);
-const categoryRouter = require('./Routes/categoryRouter')();
-app.use('./api', categoryRouter);
 const customerRouter = require('./Routes/customerRouter')();
-app.use('./api', customerRouter);
-const favoriteCountRouter = require('./Routes/favoriteCountRoutes')();
-app.use('./api', favoriteCountRouter);
-const favoriteRouter = require('./Routes/favoriteRouter')();
-app.use('./api', favoriteRouter);
-const orderRouter = require('./Routes/orderRouter')();
-app.use('/api', orderRouter);
-const ordersByCustomerIdRouter = require('./Routes/ordersByCustomerIdRouter')();
-app.use('./api', ordersByCustomerIdRouter);
-const productImageRouter = require('./Routes/productImageRouter')();
-app.use('./api', productImageRouter);
-const productRouter = require('./Routes/productRouter')();
-app.use('./api', productRouter);
-const reviewsByProductIdRouter = require('./Routes/reviewsByProductIdRouter')();
-app.use('./api', reviewsByProductIdRouter);
+app.use('/api', customerRouter);
 
 
 app.server = app.listen(port, () => {
