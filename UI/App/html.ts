@@ -1,4 +1,5 @@
 import { Customer } from './customer';
+import {Brand} from './brand';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
   ///const teachersElement = document.getElementById('teacher-container');
@@ -11,4 +12,8 @@ export const displayCustomers = (customers: Array<Customer>): void => {
 }
    */
 };
+
+export const displayBrands = (brands: Array<Brand>): void => {
+  console.log(brands);
+}
 

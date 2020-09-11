@@ -7,6 +7,7 @@ const main = async () => {
             
             const html = await import('./html');
             html.displayCustomers(result.customers);
+            html.displayBrands(result.brands);
         } 
     catch (e) {
         console.log(e);
