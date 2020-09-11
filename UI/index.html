@@ -8,6 +8,53 @@
     <title>Webshop</title>
 </head>
 <body>
+
+    <!-- navbar 1-->
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+        <a href="#" class="logo">MYSTORE</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">About us</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Help center</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Delivery info</a>
+          </li>
+        </ul>
+      </nav>
+<!-- navbar 2-->
+      <nav class="navbar navbar-second">
+        <form id="search-field" class="search">
+            <input type="text" placeholder="Sök..." required />
+          </form>
+
+        <ul class="main-nav-second" id="js-menu">
+          <li>
+            <form action="/action_page.php">
+                <select id="user" name="user">
+                  <option value="exempel0">john@exempel.com</option>
+                  <option value="exempel1">exempel1</option>
+                </select>
+              </form>         
+          </li>
+          <li>
+            <span class="second-nav-items"> <i class="far fa-heart"></i> <br><p>FAVORITES</p></span>
+        </li>
+          <li>
+            <span class="second-nav-items"><i class="fas fa-shopping-cart"></i><br><p>$0.000</p></span>
+        </li>
+        </ul>
+      </nav>
+        
+   
+    <!-- navbar slut-->
+
+
     <!--SIDANS CONTAINER-->
 <div class="page-container">'
     <!--CONTAINER FÖR KATEGORIER-->
@@ -92,6 +139,8 @@
         </div>
     </div>
 </div>
+</div>
+    <script src="script.js"></script>
     <script src="bundle.js"></script>
 </body>
 </html>
