@@ -128,7 +128,7 @@ color:#ffffff;
 
 
 .navbar-second{
-  top:10vh;
+  top: 12vh;
   background-color: #0e0e0eb2;
 }
 
@@ -142,7 +142,7 @@ select{
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 75px;
+    height: 89px;
     align-items: center;
   }
 
