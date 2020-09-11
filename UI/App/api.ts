@@ -18,6 +18,7 @@ export const getData = async () => {
     customers.forEach((a:any) => result.customers.push(new Customer(a)));
     brands.forEach((a:any) => result.brands.push(new Brand(a)));
 
+
     return result;
 }
     const get = async(uri:string) => {

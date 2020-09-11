@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 //GETCUSTOMER
 const customerRouter = require('./Routes/customerRouter')();
 app.use('/api', customerRouter);
-//GETBASICCART
+//GETBRAND
 const brandRouter = require('./Routes/brandRouter')();
 app.use('/api', brandRouter);
 
