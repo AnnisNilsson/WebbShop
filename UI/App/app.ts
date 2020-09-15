@@ -1,4 +1,5 @@
 import { DbResult } from './dbResult';
+import './event';
 
 const main = async () => {
     try {
@@ -7,7 +8,6 @@ const main = async () => {
             
             const html = await import('./html');
             html.displayCustomers(result.customers);
-            html.displayBrands(result.brands);
         } 
     catch (e) {
         console.log(e);

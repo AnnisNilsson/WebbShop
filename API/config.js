@@ -1,8 +1,8 @@
 const config = {
     user: 'joshalper',
     password: 'F1skbaj5',
-    server: 'joshalperwebshop.database.windows.net',
-    database: 'Webshop'
+    server: 'webshopapi.database.windows.net',
+    database: 'webshopapi'
 }
 //configure the connection infomration to the server and database
 //same info you used when setting up Azure Data studio.

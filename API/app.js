@@ -14,11 +14,6 @@ app.use(bodyParser.json());
 //GETCUSTOMER
 const customerRouter = require('./Routes/customerRouter')();
 app.use('/api', customerRouter);
-//GETBRAND
-const brandRouter = require('./Routes/brandRouter')();
-app.use('/api', brandRouter);
-
-
 
 app.server = app.listen(port, () => {
     console.log(`running on port ${port}`);
