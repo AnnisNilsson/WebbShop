@@ -1,4 +1,4 @@
-import { Customer } from './customer';
+import { Customer } from './Classes/customer';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
   console.log(customers);

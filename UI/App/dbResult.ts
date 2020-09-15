@@ -2,7 +2,7 @@
 import {Teacher} from './teacher';
 import {SchoolClass} from './schoolClass';
 */
-import {Customer} from './customer';
+import {Customer} from './Classes/customer';
 
 export class DbResult {
     private _customers: Array <Customer> = new Array <Customer> ();
