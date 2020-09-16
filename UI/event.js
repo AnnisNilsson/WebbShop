@@ -2,10 +2,9 @@
 
 /*USER-DROP-DOWN*/
 const customerDropDown = document.getElementById('user');
-
+ 
 customerDropDown.onchange = (e) => {
-  const customerName = document.querySelectorAll('.customer-name');
-  let customerId = e.target.id;
+let customerId = customerDropDown.options[customerDropDown.selectedIndex].id;
 console.log(customerId);
 }
 /*
