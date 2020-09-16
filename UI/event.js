@@ -4,7 +4,6 @@ const categoryBtn = document.querySelectorAll('.product-container');
 
 const categoryContainer = document.querySelector('#category-container').addEventListener('click', function(e) {
   if(e.target.className === 'categories') {
-    console.log(e.target.id);
     let categoryId = e.target.id;
     localStorage.CategoryId = categoryId;
   }
