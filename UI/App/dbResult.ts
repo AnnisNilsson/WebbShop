@@ -1,7 +1,3 @@
-/*
-import {Teacher} from './teacher';
-import {SchoolClass} from './schoolClass';
-*/
 import {Customer} from './Classes/customer';
 
 export class DbResult {

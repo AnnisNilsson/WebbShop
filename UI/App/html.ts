@@ -1,7 +1,6 @@
 import { Customer } from './Classes/customer';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
-  console.log(customers);
   const customerContainer = document.getElementById('user');
   if(customerContainer !== null) {
     customers.forEach((a: Customer, idx: number) => {
