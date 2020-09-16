@@ -14,7 +14,7 @@ export class Customer {
     public html() {
   
       return `
-      <option id=${this.id}>${this.firstName} ${this.lastName}</option>
+      <option id=${this.id} class="customer-name">${this.firstName} ${this.lastName}</option>
           `;
     }
   }
