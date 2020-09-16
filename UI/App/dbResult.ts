@@ -1,3 +1,4 @@
+
 import {Customer} from './Classes/customer';
 
 export class DbResult {
@@ -8,4 +9,5 @@ export class DbResult {
     public set customers(customers: Array <Customer>) {
         this._customers = customers;
     }
+
 }

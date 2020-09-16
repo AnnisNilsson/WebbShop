@@ -11,7 +11,6 @@ export const getData = async () => {
 
     customers.forEach((a:any) => result.customers.push(new Customer(a)));
 
-
     return result;
 }
     const get = async(uri:string) => {
