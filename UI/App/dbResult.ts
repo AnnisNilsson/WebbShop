@@ -1,5 +1,6 @@
 import {Customer} from './Classes/customer';
 import {Category} from './Classes/category';
+import {BasicCart} from './Classes/basicCart';
 
 export class DbResult {
     //CUSTOMERS
@@ -18,6 +19,16 @@ export class DbResult {
     }
     public set categories(categories: Array <Category>) {
         this._categories = categories;
+    }
+
+    
+    //BASICCART
+    private _basicCarts: Array <BasicCart> = new Array <BasicCart> ();
+    public get basicCarts(): Array<BasicCart> {
+        return this._basicCarts;
+    }
+    public set basicCarts(basicCarts: Array <BasicCart>) {
+        this._basicCarts = basicCarts;
     }
 
 }

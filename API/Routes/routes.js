@@ -47,7 +47,7 @@ function routes() {
 
   /*BASICCARTPRODUCTS*/
   router
-  .route('/basicCart/:Id')
+  .route('/basicCart')
   .get(query('GetBasicCart'));
 
   /*CARTPRODUCTS*/

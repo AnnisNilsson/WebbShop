@@ -1,5 +1,6 @@
 import { Customer } from './Classes/customer';
 import { Category } from './Classes/category';
+import { BasicCart } from './Classes/basicCart';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
   const customerContainer = document.getElementById('user');
@@ -15,6 +16,15 @@ export const displayCategories = (categories: Array<Category>): void => {
   if(categoryContainer !== null) {
     categories.forEach((a: Category, idx: number) => {
       categoryContainer.innerHTML += a.html();
+    })
+  };
+};
+
+export const displayBasicCart = (basicCarts: Array<BasicCart>): void => {
+  const cartContainer = document.getElementById('cart-container');
+  if(cartContainer !== null) {
+    basicCarts.forEach((a: BasicCart, idx: number) => {
+      cartContainer.innerHTML += a.html();
     })
   };
 };

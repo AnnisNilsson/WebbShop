@@ -1,7 +1,7 @@
-/*EVENT*/
-
-/*USER-DROP-DOWN*/
 const customerDropDown = document.getElementById('user');
+
+/*EVENT*/
+/*USER-DROP-DOWN*/
  
 customerDropDown.onchange = (e) => {
 let customerId = customerDropDown.options[customerDropDown.selectedIndex].id;

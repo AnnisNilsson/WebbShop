@@ -9,6 +9,7 @@ const main = async () => {
             
             html.displayCustomers(result.customers);
             html.displayCategories(result.categories);
+            html.displayBasicCart(result.basicCarts);
         } 
     catch (e) {
         console.log(e);
