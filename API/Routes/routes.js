@@ -2,6 +2,7 @@ let __awaiter =
   (this && this.__awaiter) ||
   function (thisArg, _arguments, P, generator) {
     function adopt(value) {
+      console.log('adopt');
       return value instanceof P
         ? value
         : new P(function (resolve) {
@@ -41,6 +42,7 @@ function routes() {
       return __awaiter(this, void 0, void 0, function* () {
         req.sql = { sp };
         yield controller.crud(req, res);
+        console.log('query');
       });
     };
   };
