@@ -1,12 +1,20 @@
 const customerDropDown = document.getElementById('user');
-
+const categoryBtn = document.querySelectorAll('.product-container');
 /*EVENT*/
-/*USER-DROP-DOWN*/
- 
+
+const categoryContainer = document.querySelector('#category-container').addEventListener('click', function(e) {
+  if(e.target.className === 'categories') {
+    console.log(e.target.id);
+    let categoryId = e.target.id;
+    localStorage.CategoryId = categoryId;
+  }
+})
+
+
+/*USER-DROP-DOWN*/ 
 customerDropDown.onchange = (e) => {
 let customerId = customerDropDown.options[customerDropDown.selectedIndex].id;
 localStorage.CustomerId = customerId;
-localStorage.CategoryId = 1;
 console.log(customerId);
 }
 /*
