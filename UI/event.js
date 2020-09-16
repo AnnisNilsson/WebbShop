@@ -5,6 +5,8 @@ const customerDropDown = document.getElementById('user');
  
 customerDropDown.onchange = (e) => {
 let customerId = customerDropDown.options[customerDropDown.selectedIndex].id;
+localStorage.CustomerId = customerId;
+localStorage.CategoryId = 1;
 console.log(customerId);
 }
 /*
