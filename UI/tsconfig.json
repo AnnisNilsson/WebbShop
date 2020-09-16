@@ -67,6 +67,6 @@
       "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
       "watch": true, /* Recompiles automatically when .ts files are saved */
     },
-    "include": ["./**/*"]
+    "include": ["./**/*", "node_modules/event.js"]
   }
   

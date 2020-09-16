@@ -1,5 +1,5 @@
 import { DbResult } from './dbResult';
-import './event';
+import '../event';
 
 const main = async () => {
     try {

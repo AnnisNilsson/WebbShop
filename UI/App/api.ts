@@ -11,6 +11,7 @@ const baseUrl = 'http://localhost:4000/api/';
 
 export const getData = async () => {
     const customers = await get('customers');
+    
     let result = new DbResult();
 
     customers.forEach((a:any) => result.customers.push(new Customer(a)));
