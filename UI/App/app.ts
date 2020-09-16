@@ -5,9 +5,10 @@ const main = async () => {
     try {
         const api = await import('./api');
         const result = await api.getData();
+        const html = await import('./html');
             
-            const html = await import('./html');
             html.displayCustomers(result.customers);
+            html.displayCategories(result.categories);
         } 
     catch (e) {
         console.log(e);

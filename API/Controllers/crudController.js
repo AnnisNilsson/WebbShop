@@ -18,7 +18,6 @@ const crudController = () => {
             return res.send('Server Error. Try again later.');
         }
     });
-    console.log({crud}, 'crudcontroller');
     return { crud };
 };
 module.exports = crudController;
