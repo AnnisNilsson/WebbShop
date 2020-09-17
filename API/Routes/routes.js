@@ -67,6 +67,11 @@ function routes() {
     .put(query('ChangeFavorite'))
     .delete(query('DeleteFavorite'));
 
+      /*FAVORITESCOUNT*/
+  router
+  .route('/favorites/:Id')
+  .get(query('GetFavoritesCount'))
+
   /*CATEGORIES*/
   router.route('/categories').get(query('GetCategories'));
 

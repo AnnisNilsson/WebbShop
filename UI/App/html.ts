@@ -2,6 +2,7 @@ import { Customer } from './Classes/customer';
 import { Category } from './Classes/category';
 import { BasicCart } from './Classes/basicCart';
 import {Product} from './Classes/product';
+import {FavoriteCount} from './Classes/favoritesCount';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
   const customerContainer = document.getElementById('user');

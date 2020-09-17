@@ -2,6 +2,7 @@ import {Customer} from './Classes/customer';
 import {Category} from './Classes/category';
 import {Product} from './Classes/product';
 import {BasicCart} from './Classes/basicCart';
+import {FavoriteCount} from './Classes/favoritesCount';
 
 export class DbResult {
     //CUSTOMERS
@@ -40,6 +41,4 @@ export class DbResult {
     public set products(products: Array <Product>) {
         this._products = products;
     }
-
-
 }

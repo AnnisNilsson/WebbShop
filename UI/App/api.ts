@@ -11,7 +11,7 @@ export const getInitialData = async () => {
     const customers = await get('customers');
     const categories = await get('categories');
     const basicCarts = await get(`basicCart?customerId=${localStorage.CustomerId}`);
-    const products = await get(`products?customerId=${localStorage.CustomerId}&categoryId=1`);
+    const products = await get(`products?customerId=${localStorage.CustomerId}&categoryId=${localStorage.CategoryId}`);
     let result = new DbResult();
 
     customers.forEach((a:any) => result.customers.push(new Customer(a)));
