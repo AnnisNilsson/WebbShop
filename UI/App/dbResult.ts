@@ -2,7 +2,7 @@ import {Customer} from './Classes/customer';
 import {Category} from './Classes/category';
 import {Product} from './Classes/product';
 import {BasicCart} from './Classes/basicCart';
-import {FavoriteCount} from './Classes/favoritesCount';
+//import {FavoriteCount} from './Classes/favoritesCount';
 
 export class DbResult {
     //CUSTOMERS
@@ -41,13 +41,14 @@ export class DbResult {
     public set products(products: Array <Product>) {
         this._products = products;
     }
-
-        //FavoriteCount
-        private _favoritesCount: Array <FavoriteCount> = new Array <FavoriteCount> ();
-        public get favoritesCount(): Array<FavoriteCount> {
-            return this._favoritesCount;
-        }
-        public set favoritesCount(favoritesCount: Array <FavoriteCount>) {
-            this._favoritesCount = favoritesCount;
-        }
+    /*
+    //FAVORITECOUNT
+    private _favoritesCount: Array <FavoriteCount> = new Array <FavoriteCount> ();
+    public get favoritesCount(): Array<FavoriteCount> {
+        return this._favoritesCount;
+    }
+    public set favoritesCount(favoritesCount: Array <FavoriteCount>) {
+        this._favoritesCount = favoritesCount;
+    }
+    */
 }

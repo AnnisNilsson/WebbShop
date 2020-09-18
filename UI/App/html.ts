@@ -2,7 +2,7 @@ import { Customer } from './Classes/customer';
 import { Category } from './Classes/category';
 import { BasicCart } from './Classes/basicCart';
 import {Product} from './Classes/product';
-import {FavoriteCount} from './Classes/favoritesCount';
+//import {FavoriteCount} from './Classes/favoritesCount';
 
 export const displayCustomers = (customers: Array<Customer>): void => {
   const customerContainer = document.getElementById('user');
@@ -41,6 +41,7 @@ export const displayProduct = (products: Array<Product>): void => {
   };
 };
 
+/*
 export const displayFavoriteCount = (favoritesCount: Array<FavoriteCount>): void => {
   const favoriteCountContainer = document.getElementById('favorite-container');
   if(favoriteCountContainer !== null) {
@@ -49,6 +50,7 @@ export const displayFavoriteCount = (favoritesCount: Array<FavoriteCount>): void
     })
   };
 };
+*/
 
 
 
