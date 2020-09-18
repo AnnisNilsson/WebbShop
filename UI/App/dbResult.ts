@@ -41,4 +41,13 @@ export class DbResult {
     public set products(products: Array <Product>) {
         this._products = products;
     }
+
+        //FavoriteCount
+        private _favoritesCount: Array <FavoriteCount> = new Array <FavoriteCount> ();
+        public get favoritesCount(): Array<FavoriteCount> {
+            return this._favoritesCount;
+        }
+        public set favoritesCount(favoritesCount: Array <FavoriteCount>) {
+            this._favoritesCount = favoritesCount;
+        }
 }
