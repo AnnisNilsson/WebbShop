@@ -41,4 +41,14 @@ export const displayProduct = (products: Array<Product>): void => {
   };
 };
 
+export const displayFavoriteCount = (favoritesCount: Array<FavoriteCount>): void => {
+  const favoriteCountContainer = document.getElementById('favorite-container');
+  if(favoriteCountContainer !== null) {
+    favoritesCount.forEach((a: FavoriteCount, idx: number) => {
+      favoriteCountContainer.innerHTML += a.html();
+    })
+  };
+};
+
+
 
