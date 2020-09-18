@@ -46,9 +46,9 @@ body {
   content: "";
   background: rgb(255, 168, 0);
   width: 4px;
-  height: 20px;
+  height: 15px;
   position: absolute;
-  top: 30px;
+  top: 26px;
   right: 2px;
   transform: rotate(135deg);
   box-shadow: 1px 0 #bdbebe;
@@ -58,8 +58,8 @@ body {
   color: rgb(255, 168, 0);
   font-size: 10px;
   background: transparent;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   padding: 10px;
   border: solid 3px rgb(255, 168, 0);
   outline: none;
